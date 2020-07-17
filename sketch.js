@@ -57,15 +57,13 @@ function draw() {
     plinkos[i].display();
     
   }
-  for (var j = 0; j < particle; j++) {
-   
-    particle[j].display();
-  }
+ 
+  console.log(particle);
+  //particle.display();
+
   for(var k=0;k<divisions.length;k++){
     divisions[k].Display();
 }
-
-mouseReleased();
 
 textSize(32);
 text("Score:" + score,25,50);
@@ -75,7 +73,11 @@ text("Score:" + score,25,50);
 
 
 function mouseReleased(){
-  //if(gameState = PLAY){
-particle = new Partical(mouseX,10,10,10)
- // }
+//console.log("darsh");
+particle = new Partical(mouseX,10,10,10);
+for (var j = 0; j < particle; j++) {
+   
+  particle[j].display();
+  }
+
 }
