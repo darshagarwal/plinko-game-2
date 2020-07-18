@@ -58,8 +58,10 @@ function draw() {
     
   }
  
-  console.log(particle);
-  //particle.display();
+  if(particle!=null)
+  {
+       particle.display();
+  }
 
   for(var k=0;k<divisions.length;k++){
     divisions[k].Display();
@@ -72,12 +74,7 @@ text("Score:" + score,25,50);
 }
 
 
-function mouseReleased(){
-//console.log("darsh");
-particle = new Partical(mouseX,10,10,10);
-for (var j = 0; j < particle; j++) {
-   
-  particle[j].display();
-  }
-
+function mouseReleased()
+{
+  particle=new Partical(mouseX, 10, 10, 10); 
 }
