@@ -1,10 +1,10 @@
 class  Partical{
-    constructor( y,r) {
+    constructor( y) {
 
         var options ={
             restitution:0.4
         }
-        this.r=r;
+        this.r=10;
       
         this.body = Bodies.circle(mouseX, y, this.r,options);       
         this.color=color(random(0, 255), random(0, 255), random(0, 255));
